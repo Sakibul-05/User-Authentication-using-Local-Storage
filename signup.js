@@ -26,6 +26,7 @@ signupForm.addEventListener('submit', function (event) {
  //validate username
   if (!isValidUsername(username)) {
     signupMessage.textContent = 'Username must be contain letters and spaces';
+    signupMessage.style.color = '#dc3545'
     return;
   }
  
