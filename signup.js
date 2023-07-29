@@ -33,6 +33,7 @@ signupForm.addEventListener('submit', function (event) {
   //chech password is matched or not
   if (password !== confirmPassword) {
     signupMessage.textContent = 'Passwords do not match. Please try again.';
+    signupMessage.style.color = '#dc3545';
     return;
   }
 
