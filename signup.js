@@ -29,7 +29,12 @@ signupForm.addEventListener('submit', function (event) {
     signupMessage.style.color = '#dc3545'
     return;
   }
- 
+
+  //chech password is matched or not
+  if (password !== confirmPassword) {
+    signupMessage.textContent = 'Passwords do not match. Please try again.';
+    return;
+  }
 
   //check password is strong or not
   if (!isPasswordStrong(password)) {
